@@ -26,7 +26,6 @@ class StartActivity : AppCompatActivity() {
         val btnNumber3 = findViewById<Button>(R.id.btnNumber3)
         val btnBack = findViewById<Button>(R.id.btnBack)
 
-        // Mostrar salutació
         saludoUsusario.text = "Hola, $userName!"
 
         // Generar número aleatori entre 1 i 3
@@ -51,12 +50,10 @@ class StartActivity : AppCompatActivity() {
             }
         }
 
-        // Assignar listeners als botons
         btnNumber1.setOnClickListener { checkNumber(1) }
         btnNumber2.setOnClickListener { checkNumber(2) }
         btnNumber3.setOnClickListener { checkNumber(3) }
 
-        // Botó per tornar enrere
         btnBack.setOnClickListener { finish() }
     }
 }
